@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+	--background: #151515;
+	--accent: #1481c6;
+	--text-primary: #f7f7f7;
+	--grey: #343434;
+	--purple: #8e2ee9;
+	--light-blue: #3981ca;
+	--dark-blue: #0954eb;
+	--darker-blue: #0352f0;
+	/* sizes */
+	--xxs: 0.25rem;
+	--xs: 0.5rem;
+	--s: 0.75rem;
+	--m: 1rem;
+	--l: 1.5rem;
+	--xl: 2rem;
+	--xxl: 2.5rem;
+	--xxxl: 3rem;
+	/* border radius */
+	--br-s: 4px;
+	--br-m: 8px;
+	--br-l: 12px;
+	--dark-gradient: linear-gradient(129.01deg, #202020 0%, #141414 100%);
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+body {
+	background-color: var(--background);
+	color: var(--text-primary);
+	font-family: 'League Spartan', sans-serif;
+	width: 100vw;
+	overflow-x: hidden;
+}
+
+a {
+	text-decoration: none;
+	font-weight: 500;
+	color: var(--text-primary);
+	transition: 0.2s ease-in-out;
+}
+
+a:hover {
+	opacity: 0.7;
+}
+
+button {
+	background-color: transparent;
+	color: var(--text-primary);
+	padding: var(--xs) var(--m);
+	border: 1px solid var(--text-primary);
+	font: inherit;
+	border-radius: var(--br-m);
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+.primary-btn {
+	background-color: var(--text-primary);
+	color: var(--background);
+	font-weight: 600;
+}

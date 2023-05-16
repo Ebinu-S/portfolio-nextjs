@@ -1,0 +1,12 @@
+.nav {
+	display: flex;
+	width: 70vw;
+	justify-content: space-between;
+	margin: 0 auto;
+	padding: 1.5rem 0;
+
+	.linkIsland {
+		display: flex;
+		gap: 1rem;
+	}
+}
