@@ -1,19 +1,34 @@
 .container {
-	width: 70vw;
-	margin: var(--l) auto;
 }
 
 .rowOne {
 	display: grid;
 	grid-column-gap: var(--m);
-	grid-template-rows: 12rem;
+	grid-template-rows: 13rem;
 	grid-template-columns: 3fr 1fr 1fr;
 	grid-auto-flow: row;
 	align-self: auto;
 
 	.heroText {
+		font-size: 2.54rem;
+		font-weight: 800;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: var(--xl) var(--xxl);
+
 		background: var(--purple);
 		border-radius: var(--br-m);
+		background-color: var(--purple);
+		background-image: var(--purple-gradient);
+		background-color: hsla(288, 89%, 43%, 1);
+		background-image: radial-gradient(at 32% 27%, hsla(251, 98%, 43%, 1) 0px, transparent 50%),
+			radial-gradient(at 58% 6%, hsla(206, 78%, 43%, 1) 0px, transparent 50%),
+			radial-gradient(at 36% 32%, hsla(296, 84%, 43%, 1) 0px, transparent 50%),
+			radial-gradient(at 41% 90%, hsla(288, 90%, 43%, 1) 0px, transparent 50%),
+			radial-gradient(at 42% 86%, hsla(207, 79%, 43%, 1) 0px, transparent 50%),
+			radial-gradient(at 61% 66%, hsla(264, 80%, 43%, 1) 0px, transparent 50%),
+			radial-gradient(at 21% 58%, hsla(99, 90%, 43%, 1) 0px, transparent 50%);
 	}
 
 	.aboutCard {
@@ -21,6 +36,22 @@
 		border-radius: var(--br-m);
 		border: 2px solid var(--grey);
 		height: 100%;
+		position: relative;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		padding: var(--m);
+
+		.aboutCard_intro {
+			display: flex;
+			flex-direction: column;
+			gap: var(--s);
+
+			h1 {
+				font-size: 1.8rem;
+			}
+		}
 	}
 
 	.workCard {
@@ -28,20 +59,31 @@
 		border-radius: var(--br-m);
 		border: 2px solid var(--grey);
 		height: 100%;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		padding: var(--m);
 
 		.workCard_imageContainer {
 			position: relative;
-			width: 50px;
-			height: 50px;
+			width: 90%;
+			height: 6rem;
 		}
 	}
+}
+
+.subText {
+	color: var(--text-dim);
+	margin-bottom: var(--xxs);
 }
 
 .Col {
 	grid-column-gap: var(--m);
 	grid-row-gap: var(--m);
 	grid-template-rows: auto;
-	grid-template-columns: 1fr auto;
+	grid-template-columns: 1fr calc(100% - 13rem);
 	grid-auto-columns: 1fr;
 	display: grid;
 	margin-top: var(--m);
@@ -55,16 +97,41 @@
 		display: flex;
 
 		.profiles {
+			padding: var(--m);
 			background: var(--dark-gradient);
 			border-radius: var(--br-m);
 			border: 2px solid var(--grey);
-			height: 12rem;
+			height: 14rem;
 
 			display: flex;
 			flex-direction: column;
-			justify-content: center;
+			justify-content: space-between;
 			align-items: center;
 			gap: var(--m);
+
+			.profileCard {
+				background: var(--dark-gradient);
+				border: 2px solid var(--grey);
+				padding: var(--s);
+				border-radius: var(--br-m);
+				display: flex;
+				justify-content: space-around;
+				width: 100%;
+
+				.profileCardItem {
+					width: 35px;
+					height: 35px;
+					position: relative;
+				}
+			}
+
+			.profilesContact {
+				width: 100%;
+
+				P {
+					margin-bottom: var(--xxs);
+				}
+			}
 		}
 	}
 
@@ -75,20 +142,47 @@
 		flex-direction: column;
 
 		.servicesCardsContainer {
-			height: 12rem;
+			height: 14rem;
 			background: var(--dark-gradient);
 			border-radius: var(--br-m);
 			border: 2px solid var(--grey);
+			padding: var(--s);
+			position: relative;
+
 			display: flex;
-			justify-content: space-around;
-			align-items: center;
+			flex-direction: column;
+			justify-content: center;
+			// align-items: center;
+
+			.serviceCards {
+				display: flex;
+				justify-content: space-around;
+			}
 
 			.serviceCard {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+
 				.serviceCard_image {
 					position: relative;
-					width: 5rem;
-					height: 5rem;
+					width: 3.5rem;
+					height: 3.5rem;
 				}
+
+				p {
+					font-size: 1.2rem;
+					font-weight: 600;
+					margin-bottom: 0;
+					margin-top: var(--xs);
+				}
+			}
+
+			.serviceHeader {
+				position: absolute;
+				bottom: var(--s);
+				left: var(--s);
 			}
 		}
 
@@ -109,6 +203,34 @@
 					background: var(--dark-gradient);
 					border-radius: var(--br-m);
 					border: 2px solid var(--grey);
+					padding: var(--s);
+					position: relative;
+
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+					padding: var(--xl) var(--xxl);
+
+					h2 {
+						font-size: 2.54rem;
+						font-weight: 800;
+					}
+
+					p {
+						margin-bottom: 0;
+						// position: absolute;
+						// bottom: var(--s);
+						// left: var(--s);
+					}
+
+					.gradientText {
+						background-color: var(--purple);
+						background-image: var(--purple-gradient);
+						background-clip: text;
+						-webkit-background-clip: text;
+						-webkit-text-fill-color: transparent;
+					}
 				}
 
 				.photographyContainer {
@@ -117,6 +239,10 @@
 					position: relative;
 					border-radius: var(--br-m);
 					overflow: hidden;
+
+					img {
+						object-fit: cover;
+					}
 				}
 			}
 		}

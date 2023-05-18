@@ -1,0 +1,111 @@
+.container {
+	display: flex;
+	justify-content: space-between;
+	column-gap: var(--xxl);
+	position: relative;
+}
+
+.userCard {
+	width: max-content;
+	height: max-content;
+	background: var(--dark-gradient);
+	border-radius: var(--br-m);
+	border: 2px solid var(--grey);
+	padding: var(--xxxl) var(--xxl);
+	position: sticky;
+	top: 10%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+
+	.contactBlock {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 1rem;
+	}
+
+	.socialLinks {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1rem;
+		justify-content: center;
+		margin-top: var(--xl);
+		margin-bottom: var(--xl);
+	}
+
+	.socialLink {
+		position: relative;
+		width: 25px;
+		height: 25px;
+		overflow: hidden;
+	}
+}
+
+.descContainer {
+	.aboutBlock {
+		margin-bottom: var(--xxxl);
+	}
+
+	h2 {
+		font-size: var(--xl);
+		margin-bottom: var(--m);
+	}
+
+	.expirienceBlock {
+		margin-bottom: var(--l);
+
+		.expirienceHeader {
+			margin-bottom: var(--m);
+			display: grid;
+			grid-row-gap: var(--xs);
+
+			p {
+				margin-bottom: 0;
+				opacity: 0.8;
+			}
+
+			span {
+				opacity: 0.8;
+			}
+
+			h3 {
+				font-size: var(--l);
+				background-color: var(--purple);
+				background-image: var(--purple-gradient);
+				background-clip: text;
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+			}
+		}
+	}
+
+	.aboutHeadingGradient {
+		background-color: var(--purple);
+		background-image: var(--purple-gradient);
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+
+	.skillsContainer {
+		display: flex;
+		justify-content: start;
+		flex-wrap: wrap;
+		gap: var(--m);
+
+		.skillBlock {
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			width: 48%;
+
+			p {
+				font-size: 20px;
+				margin: 0;
+				margin-left: var(--xs);
+			}
+		}
+	}
+}

@@ -2,4 +2,31 @@
 	background: var(--dark-gradient);
 	border-radius: var(--br-m);
 	border: 2px solid var(--grey);
+	padding: var(--xs);
+	position: relative;
+	display: flex;
+	height: 3rem;
+	align-items: center;
+	overflow: hidden;
+
+	.marquee {
+		display: flex;
+
+		h5 {
+			font-size: 1rem;
+			width: max-content;
+			margin-right: var(--xl);
+		}
+
+		animation: marquee 150s linear infinite;
+	}
+}
+
+@keyframes marquee {
+	0% {
+		transform: translateX(0%);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
 }

@@ -4,6 +4,7 @@
 	--background: #151515;
 	--accent: #1481c6;
 	--text-primary: #f7f7f7;
+	--text-dim: #b4b4b4;
 	--grey: #343434;
 	--purple: #8e2ee9;
 	--light-blue: #3981ca;
@@ -23,6 +24,10 @@
 	--br-m: 8px;
 	--br-l: 12px;
 	--dark-gradient: linear-gradient(129.01deg, #202020 0%, #141414 100%);
+	--purple-gradient: radial-gradient(at 92% 97%, hsla(253, 51%, 53%, 1) 0px, transparent 50%),
+		radial-gradient(at 74% 72%, hsla(254, 51%, 53%, 1) 0px, transparent 50%),
+		radial-gradient(at 100% 5%, hsla(275, 51%, 53%, 1) 0px, transparent 50%),
+		radial-gradient(at 43% 45%, hsla(244, 51%, 53%, 1) 0px, transparent 50%);
 }
 
 * {
@@ -36,6 +41,7 @@ body {
 	font-family: 'League Spartan', sans-serif;
 	width: 100vw;
 	overflow-x: hidden;
+	font-smoothing: antialiased;
 }
 
 a {
@@ -46,7 +52,7 @@ a {
 }
 
 a:hover {
-	opacity: 0.7;
+	color: var(--text-dim);
 }
 
 button {
@@ -66,4 +72,65 @@ button:hover {
 	background-color: var(--text-primary);
 	color: var(--background);
 	font-weight: 600;
+}
+
+.bg-grey {
+	background-color: var(--grey);
+	border-color: transparent;
+	color: var(--text-primary);
+	width: 100%;
+}
+
+main {
+	width: 70vw;
+	margin: var(--l) auto;
+}
+
+p {
+	font-size: 16px;
+	line-height: 1.2;
+	margin-bottom: var(--s);
+}
+
+.openIcon {
+	position: absolute;
+	right: 0.5rem;
+	bottom: 0.5rem;
+	opacity: 0.6;
+	transition: 0.25s ease-in-out;
+}
+
+a:hover .openIcon {
+	opacity: 1;
+}
+
+.container404 {
+	height: 60vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.box404 {
+	height: 50%;
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+
+	border-radius: var(--br-m);
+	background-color: hsla(288, 89%, 43%, 1);
+	background-image: radial-gradient(at 32% 27%, hsla(251, 98%, 43%, 1) 0px, transparent 50%),
+		radial-gradient(at 58% 6%, hsla(206, 78%, 43%, 1) 0px, transparent 50%),
+		radial-gradient(at 36% 32%, hsla(296, 84%, 43%, 1) 0px, transparent 50%),
+		radial-gradient(at 41% 90%, hsla(288, 90%, 43%, 1) 0px, transparent 50%),
+		radial-gradient(at 42% 86%, hsla(207, 79%, 43%, 1) 0px, transparent 50%),
+		radial-gradient(at 61% 66%, hsla(264, 80%, 43%, 1) 0px, transparent 50%),
+		radial-gradient(at 21% 58%, hsla(99, 90%, 43%, 1) 0px, transparent 50%);
+}
+
+.links404 button {
+	border: transparent;
 }

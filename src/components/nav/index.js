@@ -15,7 +15,7 @@ function Nav() {
 				<Link href={'/about'}>
 					<span className={styles.pageLink}>About</span>
 				</Link>
-				<Link href={'/'}>
+				<Link href={'/works'}>
 					<span className={styles.pageLink}>Work</span>
 				</Link>
 			</div>
