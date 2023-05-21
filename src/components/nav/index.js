@@ -5,22 +5,24 @@ import Link from 'next/link';
 function Nav() {
 	return (
 		<nav className={styles.nav}>
-			<Link href={'/'}>
-				<span className={styles.Icon}>Ebinu</span>
-			</Link>
-			<div className={styles.linkIsland}>
+			<div className={styles.navContainer}>
 				<Link href={'/'}>
-					<span className={styles.pageLink}>Home</span>
+					<span className={styles.Icon}>Ebinu</span>
 				</Link>
-				<Link href={'/about'}>
-					<span className={styles.pageLink}>About</span>
-				</Link>
-				<Link href={'/works'}>
-					<span className={styles.pageLink}>Work</span>
-				</Link>
-			</div>
+				<div className={styles.linkIsland}>
+					<Link href={'/'}>
+						<span className={styles.pageLink}>Home</span>
+					</Link>
+					<Link href={'/about'}>
+						<span className={styles.pageLink}>About</span>
+					</Link>
+					<Link href={'/works'}>
+						<span className={styles.pageLink}>Work</span>
+					</Link>
+				</div>
 
-			<button className='primary-btn'>Lets Connect</button>
+				<button className='primary-btn'>Lets Connect</button>
+			</div>
 		</nav>
 	);
 }
