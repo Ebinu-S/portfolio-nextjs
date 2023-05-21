@@ -43,12 +43,14 @@ export default function Home() {
 						<div className={styles.workCard_imageContainer}>
 							<Image src={workImage} fill />
 						</div>
-						<h2>Projects</h2>
-						<div className={styles.subText}>
-							Check it out
-							<span className='openIcon'>
-								<Image src={enterIcon} width={25} height={25} alt='enter icon' />
-							</span>
+						<div className={styles.workTexts}>
+							<h2>Projects</h2>
+							<div className={styles.subText}>
+								Check it out
+								<span className='openIcon'>
+									<Image src={enterIcon} width={25} height={25} alt='enter icon' />
+								</span>
+							</div>
 						</div>
 					</div>
 				</Link>
@@ -110,7 +112,7 @@ export default function Home() {
 
 						<div className={styles.serviceHeader}>
 							<p className={styles.subText}>Services that I offer.</p>
-							<h3>Services</h3>
+							{/* <h3>What i can do for you.</h3> */}
 						</div>
 					</div>
 
