@@ -24,7 +24,7 @@ function CurrentTime() {
 			hours = nd.getHours() - 12;
 			setMerdiem('PM');
 		} else {
-			hours = nd.getHours();
+			hours = nd.getHours() === 0 ? 12 : nd.getHours();
 			setMerdiem('AM');
 		}
 
