@@ -20,6 +20,10 @@
 
 		animation: marquee 150s linear infinite;
 	}
+
+	@media only screen and (max-width: 426px) {
+		padding: var(--m);
+	}
 }
 
 @keyframes marquee {

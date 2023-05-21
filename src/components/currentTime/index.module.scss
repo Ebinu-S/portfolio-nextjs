@@ -13,9 +13,25 @@
 	P {
 		margin-bottom: 0;
 	}
+
+	@media only screen and (max-width: 768px) {
+		width: calc(50% - 0.5rem);
+	}
+
+	@media only screen and (max-width: 320px) {
+		width: 100%;
+	}
 }
 
 .timeText {
 	font-size: 3.3rem;
 	font-weight: 200;
+
+	@media only screen and (max-width: 768px) {
+		font-size: 5rem;
+	}
+
+	@media only screen and (max-width: 426px) {
+		font-size: 3.5rem;
+	}
 }

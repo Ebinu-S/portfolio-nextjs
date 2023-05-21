@@ -92,6 +92,10 @@ p {
 	margin-bottom: var(--s);
 }
 
+h2 {
+	font-size: var(--l);
+}
+
 .openIcon {
 	position: absolute;
 	right: 0.5rem;
@@ -133,4 +137,24 @@ a:hover .openIcon {
 
 .links404 button {
 	border: transparent;
+}
+
+@media only screen and (max-width: 1024px) {
+	main {
+		width: 80vw;
+	}
+
+	h2 {
+		font-size: 1.3rem;
+	}
+
+	.openIcon {
+		bottom: 1rem;
+	}
+}
+
+@media only screen and (max-width: 426px) {
+	p {
+		font-size: 14px;
+	}
 }

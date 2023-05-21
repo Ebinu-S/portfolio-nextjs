@@ -1,21 +1,25 @@
 .nav {
-	display: flex;
-	width: 70vw;
-	justify-content: space-between;
-	margin: 0 auto;
-	padding: 1.5rem 0;
 	position: sticky;
 	top: 0;
 	background: rgb(21, 21, 21);
 	background: linear-gradient(
 		180deg,
-		rgba(21, 21, 21, 1) 59%,
-		rgba(21, 21, 21, 0.8491771708683473) 74%,
-		rgba(21, 21, 21, 0.65) 81%,
+		rgba(21, 21, 21, 1) 70%,
+		rgba(21, 21, 21, 0.8491771708683473) 80%,
+		rgba(21, 21, 21, 0.65) 85%,
 		rgba(21, 21, 21, 0.45) 90%,
 		rgba(61, 61, 61, 0) 100%
 	);
 	z-index: 10;
+
+	.navContainer {
+		display: flex;
+		width: 70vw;
+		margin: 0 auto;
+		justify-content: space-between;
+		align-items: center;
+		padding: 1.5rem 0;
+	}
 
 	.linkIsland {
 		display: flex;
