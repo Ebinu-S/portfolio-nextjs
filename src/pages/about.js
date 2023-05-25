@@ -87,21 +87,21 @@ function About() {
 						About <span className={styles.aboutHeadingGradient}>Me</span>
 					</h2>
 					<p>
-						Hi, I'm Ebinu Suneer, a web designer specialized in creating stunning, user-friendly
-						websites. I work closely with my clients to understand their unique needs and develop a
-						personalized approach that reflects their brand identity. Using cutting-edge
-						technologies and a passion for UI design, I aim to deliver exceptional online
-						experiences that exceed my clients' expectations. Let's work together to bring your
-						website vision to life!
+						Hi, I&apos;m Ebinu Suneer, a web designer specialized in creating stunning,
+						user-friendly websites. I work closely with my clients to understand their unique needs
+						and develop a personalized approach that reflects their brand identity. Using
+						cutting-edge technologies and a passion for UI design, I aim to deliver exceptional
+						online experiences that exceed my clients&apos; expectations. Let&apos;s work together
+						to bring your website vision to life!
 					</p>
 					<p>
-						Let's build a website that makes an impact for your business 💥. I believe that a
-						website is more than just an online presence - it's a tool that can help you achieve
-						your business goals, whether that's increasing sales, building your brand, or reaching a
-						wider audience 🚀. That's why I take a results-driven approach to web design, focusing
-						on creating websites that are not only beautiful but also functional and user-friendly
-						🎨. Together, we can create a website that stands out from the crowd and delivers real,
-						measurable results for your business 📈.
+						Let&apos;s build a website that makes an impact for your business 💥. I believe that a
+						website is more than just an online presence - it&apos;s a tool that can help you
+						achieve your business goals, whether that&apos;s increasing sales, building your brand,
+						or reaching a wider audience 🚀. That&apos;s why I take a results-driven approach to web
+						design, focusing on creating websites that are not only beautiful but also functional
+						and user-friendly 🎨. Together, we can create a website that stands out from the crowd
+						and delivers real, measurable results for your business 📈.
 					</p>
 				</div>
 
@@ -159,8 +159,8 @@ function About() {
 							experience in hosting and managing client websites, including implementing
 							professional email accounts. My expertise in web hosting, server management, and issue
 							resolution has enabled me to provide top-notch service to clients. Additionally, I
-							designed and developed my company's own website, which showcases my exceptional design
-							and coding skills.
+							designed and developed my company&apos;s own website, which showcases my exceptional
+							design and coding skills.
 						</p>
 					</div>
 				</div>

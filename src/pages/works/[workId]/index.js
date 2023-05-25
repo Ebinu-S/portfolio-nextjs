@@ -108,7 +108,10 @@ function WorkPage() {
 					{data.gallery && (
 						<section className={styles.galleryGrid}>
 							{data.gallery.map((imgdata, index) => (
-								<button className={styles.galleryBox} onClick={() => handlePreviewClick(imgdata)}>
+								<button
+									key={index}
+									className={styles.galleryBox}
+									onClick={() => handlePreviewClick(imgdata)}>
 									<div className={styles.galleryImageContainer}>
 										<Image src={imgdata.image} alt='screen shot of the work' fill />
 									</div>

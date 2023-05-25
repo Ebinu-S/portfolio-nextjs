@@ -67,7 +67,7 @@ export default function Home() {
 						}}
 						className={styles.aboutCard}>
 						<div className={styles.aboutCard_intro}>
-							<span>Hi, I'm</span>
+							<span>Hi, I&apos;m</span>
 							<h1>Ebinu Suneer</h1>
 							<p>I am a web developer.</p>
 						</div>
@@ -94,7 +94,7 @@ export default function Home() {
 						}}
 						className={styles.workCard}>
 						<div className={styles.workCard_imageContainer}>
-							<Image src={workImage} fill />
+							<Image src={workImage} fill alt='work preview thumbnail' />
 						</div>
 						<div className={styles.workTexts}>
 							<h2>Projects</h2>
