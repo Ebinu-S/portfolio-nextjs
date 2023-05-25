@@ -1,10 +1,11 @@
 import Head from 'next/head';
 import React from 'react';
 import Nav from '../nav';
+import Footer from '../footer';
 
 function Layout({ children }) {
 	return (
-		<div>
+		<>
 			<Head>
 				<title>Ebinu Suneer</title>
 				<meta name='description' content='Portfolio website of ebinu suneer.' />
@@ -12,7 +13,8 @@ function Layout({ children }) {
 			</Head>
 			<Nav />
 			<main>{children}</main>
-		</div>
+			<Footer />
+		</>
 	);
 }
 

@@ -41,7 +41,7 @@ function Nav() {
 					</Link>
 					<div className={styles.contactContainer}>
 						<Image src={iconmail} width={15} height={15} />
-						<a href='mailto:ebinusuneer2nd@gmail.com'>Contact</a>
+						<a href='mailto:ebinusuneer2nd@gmail.com'>Mail me</a>
 					</div>
 				</div>
 				{/* mobile menu */}
@@ -67,7 +67,7 @@ function Nav() {
 						</Link>
 						<div className={styles.contactContainer}>
 							{/* <Image src={iconmail} width={40} height={40} /> */}
-							<a href='mailto:ebinusuneer2nd@gmail.com'>Contact</a>
+							<a href='mailto:ebinusuneer2nd@gmail.com'>Mail me</a>
 						</div>
 					</motion.div>
 				)}

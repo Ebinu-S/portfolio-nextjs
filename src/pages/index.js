@@ -30,10 +30,42 @@ export default function Home() {
 		<div className={styles.container}>
 			{/* first row */}
 			<section className={styles.rowOne}>
-				<div className={styles.heroText}>Building websites that make an impact.</div>
+				<div className={styles.heroText}>
+					<motion.div
+						initial={{
+							rotate: 360,
+							scale: 2.5,
+						}}
+						animate={{
+							scale: 2.5,
+							rotate: 0,
+						}}
+						transition={{
+							ease: 'linear',
+							repeat: 'infinity',
+							repeatType: 'reverse',
+							duration: 10,
+						}}
+						whileHover={{
+							x: 800,
+						}}
+						className={styles.heroGradient}></motion.div>
+					<span>Building websites that make an impact.</span>
+				</div>
 				{/* about section */}
 				<Link href={'/about'}>
-					<div className={styles.aboutCard}>
+					<motion.div
+						initial={null}
+						whileHover={{
+							scale: 0.99,
+							border: '2px solid #b4b4b4',
+							boxShadow: 'inset 0 0 6px -2px #f7f7f7',
+						}}
+						transition={{
+							ease: 'easeInOut',
+							duration: 0.25,
+						}}
+						className={styles.aboutCard}>
 						<div className={styles.aboutCard_intro}>
 							<span>Hi, I'm</span>
 							<h1>Ebinu Suneer</h1>
@@ -45,11 +77,22 @@ export default function Home() {
 								<Image src={enterIcon} width={25} height={25} alt='enter icon' />
 							</span>
 						</div>
-					</div>
+					</motion.div>
 				</Link>
 				{/* project section */}
 				<Link href={'/works'}>
-					<div className={styles.workCard}>
+					<motion.div
+						initial={null}
+						whileHover={{
+							scale: 0.99,
+							border: '2px solid #b4b4b4',
+							boxShadow: 'inset 0 0 6px -2px #f7f7f7',
+						}}
+						transition={{
+							ease: 'easeInOut',
+							duration: 0.25,
+						}}
+						className={styles.workCard}>
 						<div className={styles.workCard_imageContainer}>
 							<Image src={workImage} fill />
 						</div>
@@ -62,7 +105,7 @@ export default function Home() {
 								</span>
 							</div>
 						</div>
-					</div>
+					</motion.div>
 				</Link>
 			</section>
 
@@ -132,7 +175,17 @@ export default function Home() {
 
 						{/* lets work together */}
 						<div className={styles.letsWorkRow}>
-							<div
+							<motion.div
+								initial={null}
+								whileHover={{
+									scale: 0.99,
+									border: '2px solid #b4b4b4',
+									boxShadow: 'inset 0 0 6px -2px #f7f7f7',
+								}}
+								transition={{
+									ease: 'easeInOut',
+									duration: 0.25,
+								}}
 								className={styles.letWorkCard}
 								onMouseOver={handleContactHover}
 								onMouseLeave={handleContactHover}
@@ -151,7 +204,7 @@ export default function Home() {
 									Lets work <span className={styles.gradientText}>together</span>
 								</h2>
 								<p>Contact</p>
-							</div>
+							</motion.div>
 							{/* photos */}
 							<div className={styles.photographyContainer}>
 								<Image

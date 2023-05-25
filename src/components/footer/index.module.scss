@@ -1,0 +1,22 @@
+.footer {
+	margin: var(--l) 0;
+	padding: var(--s);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.linkIsland {
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+
+	.contactContainer {
+		display: flex;
+		align-items: center;
+
+		a {
+			margin-left: var(--xs);
+		}
+	}
+}

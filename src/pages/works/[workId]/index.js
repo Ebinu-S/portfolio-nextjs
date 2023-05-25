@@ -109,9 +109,9 @@ function WorkPage() {
 						<section className={styles.galleryGrid}>
 							{data.gallery.map((imgdata, index) => (
 								<button className={styles.galleryBox} onClick={() => handlePreviewClick(imgdata)}>
-									<motion.div layoutId={imgdata} className={styles.galleryImageContainer}>
+									<div className={styles.galleryImageContainer}>
 										<Image src={imgdata.image} alt='screen shot of the work' fill />
-									</motion.div>
+									</div>
 								</button>
 							))}
 						</section>
