@@ -9,6 +9,7 @@
 	display: flex;
 	gap: 1rem;
 	margin-bottom: var(--m);
+	flex-wrap: wrap;
 
 	.chip {
 		background-color: var(--text-dim);

@@ -11,6 +11,7 @@
 		rgba(61, 61, 61, 0) 100%
 	);
 	z-index: 10;
+	position: relative;
 
 	.navContainer {
 		display: flex;
@@ -24,5 +25,48 @@
 	.linkIsland {
 		display: flex;
 		gap: 1rem;
+		align-items: center;
+
+		.contactContainer {
+			display: flex;
+			align-items: center;
+
+			a {
+				margin-left: var(--xs);
+			}
+		}
+
+		@media only screen and (max-width: 768px) {
+			display: none;
+		}
+	}
+}
+
+.menuButton {
+	display: none;
+
+	@media only screen and (max-width: 768px) {
+		display: block;
+	}
+}
+
+.mobileMenu {
+	display: none;
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	background-color: var(--background);
+	justify-content: flex-start;
+	align-items: center;
+	gap: 2.5rem;
+	padding-top: var(--xl);
+
+	a {
+		font-size: 3rem;
+	}
+
+	@media only screen and (max-width: 768px) {
+		display: flex;
+		flex-direction: column;
 	}
 }
