@@ -131,3 +131,9 @@
 		}
 	}
 }
+
+.contactButton {
+	padding: var(--xs) var(--m);
+	border-radius: var(--br-m);
+	text-align: center;
+}

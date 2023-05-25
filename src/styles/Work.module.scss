@@ -111,10 +111,15 @@
 			display: flex;
 			flex-direction: column;
 
-			span {
+			div {
 				font-size: 0.8rem;
 				color: var(--text-dim);
 				margin-bottom: var(--xxs);
+			}
+
+			.servicesCotainer {
+				display: flex;
+				flex-wrap: wrap;
 			}
 		}
 	}
@@ -122,8 +127,11 @@
 	.descContent {
 		width: 85%;
 
-		h4 {
+		h3 {
 			margin-bottom: var(--m);
+		}
+		h4 {
+			margin-bottom: var(--s);
 		}
 	}
 
@@ -196,5 +204,15 @@
 	a {
 		padding: var(--xs) var(--m);
 		border-radius: var(--br-s);
+	}
+}
+
+.workListcontainer {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 5rem;
+
+	@media only screen and (max-width: 768px) {
+		flex-direction: column;
 	}
 }

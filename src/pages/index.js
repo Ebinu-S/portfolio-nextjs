@@ -3,6 +3,8 @@ import styles from '../styles/Home.module.scss';
 import Image from 'next/image';
 import CurrentTime from '@/components/currentTime';
 import TextMarquee from '@/components/textMarquee';
+import { motion } from 'framer-motion';
+import { useState } from 'react';
 
 import workImage from '@/assets/work_preview.png';
 import webDevImage from '@/assets/browser.png';
@@ -14,8 +16,16 @@ import enterIcon from '@/assets/icons/enter.png';
 import iconInstagram from '@/assets/instagram.svg';
 import iconGithub from '@/assets/github.svg';
 import iconLinkedin from '@/assets/linkedin.svg';
+import iconmail from '@/assets/email.png';
+import iconmailOpen from '@/assets/new-email.png';
 
 export default function Home() {
+	const [contactHover, setContactHover] = useState(false);
+
+	function handleContactHover() {
+		setContactHover(!contactHover);
+	}
+
 	return (
 		<div className={styles.container}>
 			{/* first row */}
@@ -62,17 +72,17 @@ export default function Home() {
 					<div className={styles.profiles}>
 						<div className={styles.profileCard}>
 							<div className={styles.profileCardItem}>
-								<a href='https://www.google.com' target='_blank'>
+								<a href='https://www.linkedin.com/in/ebinu-suneer/' target='_blank'>
 									<Image src={iconLinkedin} alt='facebook icon' fill />
 								</a>
 							</div>
 							<div className={styles.profileCardItem}>
-								<a href='https://www.google.com' target='_blank'>
+								<a href='https://github.com/Ebinu-S' target='_blank'>
 									<Image src={iconGithub} alt='facebook icon' fill />
 								</a>
 							</div>
 							<div className={styles.profileCardItem}>
-								<a href='https://www.google.com' target='_blank'>
+								<a href='https://www.instagram.com/dr.retr0_o/' target='_blank'>
 									<Image src={iconInstagram} alt='facebook icon' fill />
 								</a>
 							</div>
@@ -122,7 +132,21 @@ export default function Home() {
 
 						{/* lets work together */}
 						<div className={styles.letsWorkRow}>
-							<div className={styles.letWorkCard}>
+							<div
+								className={styles.letWorkCard}
+								onMouseOver={handleContactHover}
+								onMouseLeave={handleContactHover}
+								onBlur={handleContactHover}>
+								<a href='mailto:ebinusuneer2nd@gmail.com'>
+									<span className='openIcon'>
+										<Image
+											src={contactHover ? iconmailOpen : iconmail}
+											width={25}
+											height={25}
+											alt='enter icon'
+										/>
+									</span>
+								</a>
 								<h2>
 									Lets work <span className={styles.gradientText}>together</span>
 								</h2>

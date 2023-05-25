@@ -30,6 +30,7 @@ import iconGit from '@/assets/icons/git.svg';
 import iconGitHub from '@/assets/icons/github.svg';
 import iconMaterial from '@/assets/icons/material.svg';
 import iconPhotoshop from '@/assets/icons/adobe-photoshop.svg';
+import { motion } from 'framer-motion';
 
 function About() {
 	return (
@@ -40,28 +41,43 @@ function About() {
 					<p>ebinusuneer2nd@gmail.com</p>
 				</div>
 				<div className={styles.socialLinks}>
-					<a href='https://www.google.com' target='_blank' className={styles.socialLink}>
+					<a
+						href='https://www.linkedin.com/in/ebinu-suneer/'
+						target='_blank'
+						className={styles.socialLink}>
+						<Image src={iconLinkedin} alt='linkedin icon' fill />
+					</a>
+					<a href='https://github.com/Ebinu-S' target='_blank' className={styles.socialLink}>
+						<Image src={iconGithub} alt='Github icon' fill />
+					</a>
+					<a
+						href='https://www.facebook.com/eibie.ebin/'
+						target='_blank'
+						className={styles.socialLink}>
 						<Image src={iconFacebook} alt='facebook icon' fill />
 					</a>
-					<a href='https://www.google.com' target='_blank' className={styles.socialLink}>
-						<Image src={iconInstagram} alt='facebook icon' fill />
+					<a
+						href='https://www.instagram.com/dr.retr0_o/'
+						target='_blank'
+						className={styles.socialLink}>
+						<Image src={iconInstagram} alt='instagram icon' fill />
 					</a>
-					<a href='https://www.google.com' target='_blank' className={styles.socialLink}>
-						<Image src={iconGithub} alt='facebook icon' fill />
-					</a>
-					<a href='https://www.google.com' target='_blank' className={styles.socialLink}>
-						<Image src={iconLinkedin} alt='facebook icon' fill />
-					</a>
-					<a href='https://www.google.com' target='_blank' className={styles.socialLink}>
+					{/* <a href='mailto:ebinusuneer2nd@gmail.com' target='_blank' className={styles.socialLink}>
 						<Image src={iconGmail} alt='facebook icon' fill />
-					</a>
+					</a> */}
 				</div>
 				<div className={styles.contactBlock}>
-					<a href=''>
+					<a
+						href='https://drive.google.com/file/d/1vqtNgisawRcdxXTEWuIkMhlkSQ-IaWJd/view?usp=sharing'
+						target='_blank'>
 						<Image src={iconResume} alt='resume icon' sizes='30px' width={15} height={15} />
 						<span style={{ marginLeft: 'var(--xs)' }}>Resume</span>
 					</a>
-					<button className='primary-btn bg-grey'>Contact Me</button>
+					<a
+						className={`${styles.contactButton} primary-btn bg-grey`}
+						href='mailto:ebinusuneer2nd@gmail.com'>
+						Contact Me
+					</a>
 				</div>
 			</section>
 
@@ -255,6 +271,11 @@ function About() {
 						</div>
 					</div>
 				</div>
+				<a
+					className={`${styles.contactButton} primary-btn bg-grey`}
+					href='mailto:ebinusuneer2nd@gmail.com'>
+					Contact Me
+				</a>
 			</section>
 		</div>
 	);

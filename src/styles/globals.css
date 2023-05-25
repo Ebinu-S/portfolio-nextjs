@@ -79,6 +79,11 @@ button:hover {
 	border-color: transparent;
 	color: var(--text-primary);
 	width: 100%;
+	transition: border 0.25s ease-in-out;
+}
+
+.bg-grey:hover {
+	border-color: var(--text-dim);
 }
 
 main {
@@ -137,6 +142,16 @@ a:hover .openIcon {
 
 .links404 button {
 	border: transparent;
+}
+
+.card {
+	background: var(--dark-gradient);
+	border: 2px solid var(--grey);
+	border-radius: var(--br-s);
+}
+
+.card:hover {
+	border-color: var(--text-dim);
 }
 
 @media only screen and (max-width: 1024px) {
