@@ -4,8 +4,11 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 import iconmail from '@/assets/email.png';
+
 import iconmenu from '@/assets/menu.svg';
-import { AnimatePresence, motion, useAnimate } from 'framer-motion';
+import iconclose from '@/assets/close.svg';
+
+import { AnimatePresence, motion } from 'framer-motion';
 
 function Nav() {
 	const [openMenu, setOpenMenu] = useState(false);
@@ -44,28 +47,34 @@ function Nav() {
 						<a href='mailto:ebinusuneer2nd@gmail.com'>Mail me</a>
 					</div>
 				</div>
+
 				{/* mobile menu */}
 				<button className={styles.menuButton} onClick={toggleMenu}>
-					<Image src={iconmenu} width={15} height={15} />
+					<Image src={openMenu ? iconclose : iconmenu} width={15} height={15} />
 				</button>
+				{/* {iconmenu} */}
 			</div>
-			<AnimatePresence>
+
+			<AnimatePresence id={'nav'}>
 				{openMenu && (
 					<motion.div
 						className={styles.mobileMenu}
 						initial={{ opacity: 0, y: '-100vh' }}
 						animate={{ y: 0, opacity: 1 }}
-						exit={{ opacity: 0 }}>
-						<Link href={'/'}>
+						exit={{ opacity: 0, y: '100vh' }}
+						transition={{
+							ease: 'easeInOut',
+						}}>
+						<Link href={'/'} onClick={toggleMenu}>
 							<span className={styles.pageLink}>Home</span>
 						</Link>
-						<Link href={'/about'}>
+						<Link href={'/about'} onClick={toggleMenu}>
 							<span className={styles.pageLink}>About</span>
 						</Link>
-						<Link href={'/works'}>
+						<Link href={'/works'} onClick={toggleMenu}>
 							<span className={styles.pageLink}>Work</span>
 						</Link>
-						<div className={styles.contactContainer}>
+						<div className={styles.contactContainer} onClick={toggleMenu}>
 							{/* <Image src={iconmail} width={40} height={40} /> */}
 							<a href='mailto:ebinusuneer2nd@gmail.com'>Mail me</a>
 						</div>

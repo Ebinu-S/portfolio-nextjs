@@ -11,7 +11,7 @@ import iconExternaLink from '@/assets/icons/external-link.svg';
 import ReactModal from 'react-modal';
 import ImagePreview from '@/components/imagePreview';
 import { CUSTOM_MODAL_STYLES } from '@/constant';
-import { motion } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 
 function WorkPage() {
 	const router = useRouter();
@@ -137,7 +137,9 @@ function WorkPage() {
 				preventScroll={true}
 				shouldCloseOnEsc={true}
 				onRequestClose={handeCloseModal}>
-				<ImagePreview image={selectedImg} handleCloseModal={handeCloseModal} />
+				<AnimatePresence id='modal'>
+					<ImagePreview image={selectedImg} handleCloseModal={handeCloseModal} />
+				</AnimatePresence>
 			</ReactModal>
 		</>
 	);

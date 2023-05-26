@@ -44,10 +44,7 @@ export default function Home() {
 							ease: 'linear',
 							repeat: 'infinity',
 							repeatType: 'reverse',
-							duration: 10,
-						}}
-						whileHover={{
-							x: 800,
+							duration: 7,
 						}}
 						className={styles.heroGradient}></motion.div>
 					<span>Building websites that make an impact.</span>

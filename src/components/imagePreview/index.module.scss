@@ -1,13 +1,11 @@
 .container {
 	background-color: #111;
-	// background: url('../../assets/pattern-tile.svg');
 	background-repeat: repeat;
 	padding: var(--l) var(--l);
 }
 
 .imageContainer {
 	width: 50vw;
-	height: 60vh;
 	position: relative;
 
 	img {
@@ -15,16 +13,49 @@
 		border-radius: var(--br-s);
 	}
 
-	.imagePotrait {
-		width: 15vw;
+	@media only screen and (max-width: 768px) {
+		width: 80vw;
 	}
+}
 
-	.imageLandscape {
-		width: 50vw;
+.imagePotrait {
+	width: 15vw;
+	height: 60vh;
+
+	@media only screen and (max-width: 1024px) {
+		width: 20vw;
 	}
 
 	@media only screen and (max-width: 768px) {
+		width: 30vw;
+		height: 60vh;
+	}
+
+	@media only screen and (max-width: 426px) {
+		width: 55vw;
+	}
+
+	@media only screen and (max-width: 426px) {
+		width: 65vw;
+	}
+}
+
+.imageLandscape {
+	width: 50vw;
+	height: 60vh;
+
+	@media only screen and (max-width: 1024px) {
+		width: 70vw;
+	}
+
+	@media only screen and (max-width: 768px) {
+		width: 70vw;
+		height: 45vh;
+	}
+
+	@media only screen and (max-width: 426px) {
 		width: 80vw;
+		height: 25vh;
 	}
 }
 
@@ -41,5 +72,23 @@
 		height: 4rem;
 		border: none;
 		box-shadow: inset 0px 0px 3px 4px rgba(0, 0, 0, 0.5);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		@media only screen and (max-width: 1024px) {
+			width: 3.5rem;
+			height: 3.5rem;
+		}
+
+		@media only screen and (max-width: 768px) {
+			width: 3rem;
+			height: 3rem;
+		}
+
+		@media only screen and (max-width: 426px) {
+			width: 2.8rem;
+			height: 2.8rem;
+		}
 	}
 }

@@ -19,6 +19,7 @@
 		position: relative;
 		border-radius: var(--br-m);
 		overflow: hidden;
+		background-color: hsla(288, 89%, 43%, 1);
 
 		span {
 			z-index: 1;
@@ -26,8 +27,8 @@
 
 		.heroGradient {
 			position: absolute;
-			width: 200%;
-			height: 200%;
+			width: 20vw;
+			height: 20vw;
 			background-color: hsla(288, 89%, 43%, 1);
 			background-image: radial-gradient(at 32% 27%, hsla(251, 98%, 43%, 1) 0px, transparent 50%),
 				radial-gradient(at 58% 6%, hsla(206, 78%, 43%, 1) 0px, transparent 50%),
@@ -36,6 +37,11 @@
 				radial-gradient(at 42% 86%, hsla(207, 79%, 43%, 1) 0px, transparent 50%),
 				radial-gradient(at 61% 66%, hsla(264, 80%, 43%, 1) 0px, transparent 50%),
 				radial-gradient(at 21% 58%, hsla(99, 90%, 43%, 1) 0px, transparent 50%);
+
+			@media only screen and (max-width: 768px) {
+				width: 40vw;
+				height: 40vw;
+			}
 		}
 	}
 

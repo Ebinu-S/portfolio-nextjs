@@ -10,8 +10,7 @@
 		rgba(21, 21, 21, 0.45) 90%,
 		rgba(61, 61, 61, 0) 100%
 	);
-	z-index: 10;
-	// position: relative;
+	z-index: 15;
 
 	.navContainer {
 		display: flex;
@@ -20,6 +19,7 @@
 		justify-content: space-between;
 		align-items: center;
 		padding: 1.5rem 0;
+		z-index: 14;
 	}
 
 	.linkIsland {
@@ -53,13 +53,15 @@
 .mobileMenu {
 	display: none;
 	position: absolute;
+	top: 0%;
+	z-index: -1;
 	width: 100vw;
 	height: 100vh;
 	background-color: var(--background);
 	justify-content: flex-start;
 	align-items: center;
 	gap: 2.5rem;
-	padding-top: var(--xl);
+	padding-top: 25%;
 
 	a {
 		font-size: 3rem;
