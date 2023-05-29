@@ -5,5 +5,10 @@ export function getWorkData(id) {
 }
 
 export function nextPage(currentId) {
-	// find index of current id, if it is last then next link will be first id else next index
+	const currentIndex = PROJECTS.findIndex((p) => p.id === currentId);
+	if (currentIndex === PROJECTS.length - 1) {
+		return PROJECTS[0].id;
+	} else {
+		return PROJECTS[currentIndex + 1].id;
+	}
 }

@@ -1,9 +1,8 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
-import { getWorkData } from '@/util';
+import { getWorkData, nextPage } from '@/util';
 import styles from '@/styles/Work.module.scss';
 
 // images
@@ -31,6 +30,11 @@ function WorkPage() {
 
 	function handeCloseModal() {
 		setModalOpen(false);
+	}
+
+	function handleNext() {
+		const id = nextPage(data.id);
+		router.push('/works/' + id);
 	}
 
 	return (
@@ -121,9 +125,9 @@ function WorkPage() {
 					)}
 
 					<section className={styles.nextContainer}>
-						<Link href='works/signature-admin-panel' className={'primary-btn bg-grey'}>
+						<button onClick={handleNext} className={'primary-btn bg-grey'}>
 							Next
-						</Link>
+						</button>
 					</section>
 				</article>
 			) : (

@@ -142,19 +142,19 @@ export default function Home() {
 						<div className={styles.serviceCards}>
 							<div className={styles.serviceCard}>
 								<div className={styles.serviceCard_image}>
-									<Image src={webDevImage} alt='web dev image' fill />
+									<Image src={webDevImage} priority alt='web dev image' fill />
 								</div>
 								<p className={styles.serviceText}>Web Development</p>
 							</div>
 							<div className={styles.serviceCard}>
 								<div className={styles.serviceCard_image}>
-									<Image src={uiImage} alt='Ui image' fill />
+									<Image src={uiImage} priority alt='Ui image' fill />
 								</div>
 								<p className={styles.serviceText}>UI design</p>
 							</div>
 							<div className={styles.serviceCard}>
 								<div className={styles.serviceCard_image}>
-									<Image src={mobileImage} alt='mobil image' fill />
+									<Image src={mobileImage} priority alt='mobile image' fill />
 								</div>
 								<p className={styles.serviceText}>Mobile Development</p>
 							</div>
