@@ -3,8 +3,6 @@ import styles from './index.module.scss';
 import Link from 'next/link';
 import Image from 'next/image';
 
-import iconmail from '@/assets/email.png';
-
 import iconmenu from '@/assets/menu.svg';
 import iconclose from '@/assets/close.svg';
 
@@ -43,8 +41,7 @@ function Nav() {
 						<span className={styles.pageLink}>Work</span>
 					</Link>
 					<div className={styles.contactContainer}>
-						<Image src={iconmail} width={15} height={15} />
-						<a href='mailto:ebinusuneer2nd@gmail.com'>Mail me</a>
+						<a href='mailto:ebinusuneer2nd@gmail.com'>Contact Me</a>
 					</div>
 				</div>
 
@@ -75,8 +72,7 @@ function Nav() {
 							<span className={styles.pageLink}>Work</span>
 						</Link>
 						<div className={styles.contactContainer} onClick={toggleMenu}>
-							{/* <Image src={iconmail} width={40} height={40} /> */}
-							<a href='mailto:ebinusuneer2nd@gmail.com'>Mail me</a>
+							<a href='mailto:ebinusuneer2nd@gmail.com'>Contact Me</a>
 						</div>
 					</motion.div>
 				)}

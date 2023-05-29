@@ -1,9 +1,6 @@
 import React from 'react';
 import styles from './index.module.scss';
 import Link from 'next/link';
-import Image from 'next/image';
-
-import iconmail from '@/assets/email.png';
 
 function Footer() {
 	return (
@@ -20,8 +17,7 @@ function Footer() {
 					<span className={styles.pageLink}>Work</span>
 				</Link>
 				<div className={styles.contactContainer}>
-					<Image src={iconmail} width={15} height={15} />
-					<a href='mailto:ebinusuneer2nd@gmail.com'>Mail</a>
+					<a href='mailto:ebinusuneer2nd@gmail.com'>Contact Me</a>
 				</div>
 			</div>
 		</footer>
