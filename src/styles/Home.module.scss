@@ -21,8 +21,14 @@
 		overflow: hidden;
 		background-color: hsla(288, 89%, 43%, 1);
 
+		div,
 		span {
 			z-index: 1;
+		}
+
+		div {
+			display: flex;
+			flex-wrap: wrap;
 		}
 
 		.heroGradient {

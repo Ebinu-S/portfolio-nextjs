@@ -26,6 +26,16 @@ export default function Home() {
 		setContactHover(!contactHover);
 	}
 
+	const heroTextInit = {
+		opacity: 0,
+		y: -100,
+	};
+
+	const heroTextAnim = {
+		opacity: 1,
+		y: 0,
+	};
+
 	return (
 		<div className={styles.container}>
 			{/* first row */}
@@ -47,7 +57,62 @@ export default function Home() {
 							duration: 7,
 						}}
 						className={styles.heroGradient}></motion.div>
-					<span>Building websites that make an impact.</span>
+					<div>
+						<motion.span
+							initial={heroTextInit}
+							animate={heroTextAnim}
+							transition={{
+								delay: 0.1,
+								ease: 'easeInOut',
+							}}>
+							Building&nbsp;
+						</motion.span>
+						<motion.span
+							initial={heroTextInit}
+							animate={heroTextAnim}
+							transition={{
+								delay: 0.3,
+								ease: 'easeInOut',
+							}}>
+							websites&nbsp;
+						</motion.span>
+						<motion.span
+							initial={heroTextInit}
+							animate={heroTextAnim}
+							transition={{
+								delay: 0.5,
+								ease: 'easeInOut',
+							}}>
+							that&nbsp;
+						</motion.span>
+						<motion.span
+							initial={heroTextInit}
+							animate={heroTextAnim}
+							transition={{
+								delay: 0.7,
+								ease: 'easeInOut',
+							}}>
+							make&nbsp;
+						</motion.span>
+						<motion.span
+							initial={heroTextInit}
+							animate={heroTextAnim}
+							transition={{
+								delay: 0.9,
+								ease: 'easeInOut',
+							}}>
+							an&nbsp;
+						</motion.span>
+						<motion.span
+							initial={heroTextInit}
+							animate={heroTextAnim}
+							transition={{
+								delay: 1.1,
+								ease: 'easeInOut',
+							}}>
+							impact.
+						</motion.span>
+					</div>
 				</div>
 				{/* about section */}
 				<Link href={'/about'}>

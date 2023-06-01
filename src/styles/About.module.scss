@@ -3,6 +3,15 @@
 	justify-content: space-between;
 	column-gap: var(--xxl);
 	position: relative;
+	p {
+		font-size: 18px;
+	}
+
+	@media only screen and (max-width: 768px) {
+		p {
+			font-size: 16px;
+		}
+	}
 
 	@media only screen and (max-width: 426px) {
 		flex-direction: column;
@@ -58,6 +67,15 @@
 .descContainer {
 	.aboutBlock {
 		margin-bottom: var(--xxxl);
+
+		h3 {
+			font-size: 1.4rem;
+			margin-bottom: var(--m);
+
+			@media only screen and (max-width: 375px) {
+				font-size: 1rem;
+			}
+		}
 	}
 
 	h2 {
@@ -103,7 +121,7 @@
 
 	.skillsContainer {
 		display: flex;
-		justify-content: start;
+		justify-content: flex-start;
 		flex-wrap: wrap;
 		gap: var(--m);
 
@@ -114,7 +132,7 @@
 			width: calc(50% - var(--xs));
 
 			p {
-				font-size: 20px;
+				// font-size: 20px;
 				margin: 0;
 				margin-left: var(--xs);
 			}
@@ -136,4 +154,17 @@
 	padding: var(--xs) var(--m);
 	border-radius: var(--br-m);
 	text-align: center;
+}
+
+.skillCard {
+	border-radius: var(--br-m);
+	border: 2px solid var(--grey);
+	padding: var(--m);
+	margin-bottom: var(--m);
+	background-color: var(--background);
+	transition: background-color 0.25s ease-in-out;
+
+	&:hover {
+		background-color: var(--grey);
+	}
 }

@@ -88,20 +88,11 @@ function About() {
 					</h2>
 					<p>
 						Hi, I&apos;m Ebinu Suneer, a web designer specialized in creating stunning,
-						user-friendly websites. I work closely with my clients to understand their unique needs
-						and develop a personalized approach that reflects their brand identity. Using
-						cutting-edge technologies and a passion for UI design, I aim to deliver exceptional
-						online experiences that exceed my clients&apos; expectations. Let&apos;s work together
-						to bring your website vision to life!
-					</p>
-					<p>
-						Let&apos;s build a website that makes an impact for your business 💥. I believe that a
-						website is more than just an online presence - it&apos;s a tool that can help you
-						achieve your business goals, whether that&apos;s increasing sales, building your brand,
-						or reaching a wider audience 🚀. That&apos;s why I take a results-driven approach to web
-						design, focusing on creating websites that are not only beautiful but also functional
-						and user-friendly 🎨. Together, we can create a website that stands out from the crowd
-						and delivers real, measurable results for your business 📈.
+						user-friendly websites. With a focus on cutting-edge technologies and a passion for UI
+						design, I work closely with clients to deliver exceptional online experiences that
+						exceed expectations. Let&apos;s bring your website vision to life and make an impact for
+						your business. Together, we can create a website that stands out, drives results, and
+						helps you achieve your business goals. Let&apos;s build something extraordinary!
 					</p>
 				</div>
 
@@ -186,96 +177,122 @@ function About() {
 				</div>
 
 				<div className={styles.aboutBlock}>
-					<h2>Skills</h2>
-					<div className={styles.skillsContainer}>
-						<div className={styles.skillBlock}>
-							<Image src={iconReact} alt='graphics' width={20} height={20} />
-							<p>React.Js</p>
-						</div>
+					<h2>Technical Skills</h2>
 
-						<div className={styles.skillBlock}>
-							<Image src={iconNext} alt='graphics' width={20} height={20} />
-							<p>Next Js</p>
+					<div className={styles.skillCard}>
+						<h3>Front-End Development:</h3>
+						<div className={styles.skillsContainer}>
+							<div className={styles.skillBlock}>
+								<Image src={iconReact} alt='graphics' width={20} height={20} />
+								<p>React.Js</p>
+							</div>
+							<div className={styles.skillBlock}>
+								<Image src={iconNext} alt='graphics' width={20} height={20} />
+								<p>Next Js</p>
+							</div>
+							<div className={styles.skillBlock}>
+								<Image src={iconReact} alt='graphics' width={20} height={20} />
+								<p>React Native</p>
+							</div>
+							<div className={styles.skillBlock}>
+								<Image src={iconWebflow} alt='graphics' width={20} height={20} />
+								<p>Webflow</p>
+							</div>{' '}
+							<div className={styles.skillBlock}>
+								<Image src={iconFlutter} alt='graphics' width={20} height={20} />
+								<p>Flutter</p>
+							</div>
 						</div>
+					</div>
 
-						<div className={styles.skillBlock}>
-							<Image src={iconReact} alt='graphics' width={20} height={20} />
-							<p>React Native</p>
+					<div className={styles.skillCard}>
+						<h3>Back-End Development:</h3>
+						<div className={styles.skillsContainer}>
+							<div className={styles.skillBlock}>
+								<Image src={iconFirebase} alt='graphics' width={20} height={20} />
+								<p>Firebase</p>
+							</div>
+							<div className={styles.skillBlock}>
+								<Image src={iconNode} alt='graphics' width={20} height={20} />
+								<p>Node.Js</p>
+							</div>
+							<div className={styles.skillBlock}>
+								<Image src={iconRuby} alt='graphics' width={20} height={20} />
+								<p>Ruby on Rails</p>
+							</div>
 						</div>
+					</div>
 
-						<div className={styles.skillBlock}>
-							<Image src={iconFirebase} alt='graphics' width={20} height={20} />
-							<p>Firebase</p>
+					<div className={styles.skillCard}>
+						<h3>UI/UX Design:</h3>
+						<div className={styles.skillsContainer}>
+							<div className={styles.skillBlock}>
+								<Image src={iconFigma} alt='graphics' width={20} height={20} />
+								<p>Figma</p>
+							</div>{' '}
+							<div className={styles.skillBlock}>
+								<Image src={iconPhotoshop} alt='graphics' width={20} height={20} />
+								<p>Photoshop</p>
+							</div>
 						</div>
+					</div>
 
-						<div className={styles.skillBlock}>
-							<Image src={iconNode} alt='graphics' width={20} height={20} />
-							<p>Node.Js</p>
+					<div className={styles.skillCard}>
+						<h3>CSS Frameworks/Libraries:</h3>
+						<div className={styles.skillsContainer}>
+							<div className={styles.skillBlock}>
+								<Image src={iconTailwind} alt='graphics' width={20} height={20} />
+								<p>Tailwind Css</p>
+							</div>
+							<div className={styles.skillBlock}>
+								<Image src={iconBootsrap} alt='graphics' width={20} height={20} />
+								<p>Bootstrap</p>
+							</div>{' '}
+							<div className={styles.skillBlock}>
+								<Image src={iconMaterial} alt='graphics' width={20} height={20} />
+								<p>Material UI</p>
+							</div>
 						</div>
-						<div className={styles.skillBlock}>
-							<Image src={iconFlutter} alt='graphics' width={20} height={20} />
-							<p>Flutter</p>
+					</div>
+
+					<div className={styles.skillCard}>
+						<h3>Languages:</h3>
+						<div className={styles.skillsContainer}>
+							<div className={styles.skillBlock}>
+								<Image src={iconHtml} alt='graphics' width={20} height={20} />
+								<p>HTML</p>
+							</div>
+							<div className={styles.skillBlock}>
+								<Image src={iconCss} alt='graphics' width={20} height={20} />
+								<p>CSS</p>
+							</div>
+							<div className={styles.skillBlock}>
+								<Image src={iconJs} alt='graphics' width={20} height={20} />
+								<p>javascript</p>
+							</div>
+							<div className={styles.skillBlock}>
+								<Image src={iconDart} alt='graphics' width={20} height={20} />
+								<p>Dart</p>
+							</div>
 						</div>
-						<div className={styles.skillBlock}>
-							<Image src={iconRuby} alt='graphics' width={20} height={20} />
-							<p>Ruby on Rails</p>
-						</div>
-						<div className={styles.skillBlock}>
-							<Image src={iconWebflow} alt='graphics' width={20} height={20} />
-							<p>Webflow</p>
-						</div>
-						<div className={styles.skillBlock}>
-							<Image src={iconFigma} alt='graphics' width={20} height={20} />
-							<p>Figma</p>
-						</div>
-						<div className={styles.skillBlock}>
-							<Image src={iconTailwind} alt='graphics' width={20} height={20} />
-							<p>Tailwind Css</p>
-						</div>
-						{/* break */}
-						<div className={styles.skillBlock}>
-							<Image src={iconHtml} alt='graphics' width={20} height={20} />
-							<p>HTML</p>
-						</div>
-						<div className={styles.skillBlock}>
-							<Image src={iconCss} alt='graphics' width={20} height={20} />
-							<p>Css</p>
-						</div>
-						<div className={styles.skillBlock}>
-							<Image src={iconJs} alt='graphics' width={20} height={20} />
-							<p>javascript</p>
-						</div>
-						<div className={styles.skillBlock}>
-							<Image src={iconBootsrap} alt='graphics' width={20} height={20} />
-							<p>Bootstrap</p>
-						</div>
-						<div className={styles.skillBlock}>
-							<Image src={iconDart} alt='graphics' width={20} height={20} />
-							<p>Dart</p>
-						</div>
-						<div className={styles.skillBlock}>
-							<Image src={iconGit} alt='graphics' width={20} height={20} />
-							<p>Git</p>
-						</div>
-						<div className={styles.skillBlock}>
-							<Image src={iconGitHub} alt='graphics' width={20} height={20} />
-							<p>Github</p>
-						</div>
-						<div className={styles.skillBlock}>
-							<Image src={iconMaterial} alt='graphics' width={20} height={20} />
-							<p>Material UI</p>
-						</div>
-						<div className={styles.skillBlock}>
-							<Image src={iconPhotoshop} alt='graphics' width={20} height={20} />
-							<p>Photoshop</p>
+					</div>
+
+					<div className={styles.skillCard}>
+						<h3>Version Control:</h3>
+						<div className={styles.skillsContainer}>
+							{/* break */}
+
+							<div className={styles.skillBlock}>
+								<Image src={iconGit} alt='graphics' width={20} height={20} />
+								<p>Git</p>
+							</div>
+							<div className={styles.skillBlock}>
+								<Image src={iconGitHub} alt='graphics' width={20} height={20} />
+								<p>Github</p>
+							</div>
 						</div>
 					</div>
 				</div>
-				<a
-					className={`${styles.contactButton} primary-btn bg-grey`}
-					href='mailto:ebinusuneer2nd@gmail.com'>
-					Contact Me
-				</a>
 			</section>
 		</div>
 	);
