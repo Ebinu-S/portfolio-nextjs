@@ -14,7 +14,7 @@ function Footer() {
 					<span className={styles.pageLink}>About</span>
 				</Link>
 				<Link href={'/works'}>
-					<span className={styles.pageLink}>Work</span>
+					<span className={styles.pageLink}>Projects</span>
 				</Link>
 				<div className={styles.contactContainer}>
 					<a href='mailto:ebinusuneer2nd@gmail.com'>Contact Me</a>

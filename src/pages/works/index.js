@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import React from 'react';
 import styles from '@/styles/Work.module.scss';
 import { PROJECTS } from '@/constant';
@@ -6,11 +5,14 @@ import WorkCard from '@/components/workCard';
 
 function Works() {
 	return (
-		<div className={styles.workListcontainer}>
-			{PROJECTS.map((project) => (
-				<WorkCard data={project} key={project.title} />
-			))}
-		</div>
+		<>
+			<h1>My Projects</h1>
+			<div className={styles.workListcontainer}>
+				{PROJECTS.map((project) => (
+					<WorkCard data={project} key={project.title} />
+				))}
+			</div>
+		</>
 	);
 }
 
